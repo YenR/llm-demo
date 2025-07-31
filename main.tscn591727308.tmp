@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://jb72ate5jsrm"]
+
+[ext_resource type="Script" uid="uid://b20qdlvhm8ura" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="FetchButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.498
+anchor_top = 1.0
+anchor_right = 0.498
+anchor_bottom = 1.0
+offset_left = -153.696
+offset_top = -215.0
+offset_right = 177.304
+offset_bottom = -118.0
+text = "Get New Fortune"
+
+[node name="FortuneLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.509
+anchor_top = 1.0
+anchor_right = 0.509
+anchor_bottom = 1.0
+offset_left = -406.368
+offset_top = -588.0
+offset_right = 405.632
+offset_bottom = -238.0
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
