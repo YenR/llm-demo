@@ -1,6 +1,7 @@
 extends Control
 
 @export var model_name: String = "google/gemma-3-4b"
+@export var url_full: String = "http://127.0.0.1:1234/v1/completions"
 
 @onready var http_request = $HTTPRequest
 @onready var btn = $FetchButton
@@ -13,7 +14,7 @@ func _ready():
 
 func _on_button_pressed():
 	label.text = "Loading..."
-	var url = "http://127.0.0.1:1234/v1/completions"
+	var url = url_full
 	var headers = ["Content-Type: application/json"]
 	var body = {
 		"model": model_name,
