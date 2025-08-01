@@ -18,4 +18,5 @@ A minimal Godot 4.4.1 "stub" project that shows how to call a locally-running LL
 3. Start Godot 
 4. Import source folder (or drag and drop into project browser) 
 5. Select project and click "Edit"
-6. Open file `main.gd` and edit `model_name` and `url`
+6. Open file `main.gd` and adjust `model_name` and `url_full` (or edit them within the Godot inspector)
+7. Run the Godot project
